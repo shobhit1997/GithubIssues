@@ -3,7 +3,7 @@ Github Issues Count
 ===================================
 
 This a portal to get a live count of issues of public repository.
-The web portal is live on: http://52.91.35.65:8089/
+The web portal is live on: http://52.91.35.65:9000/
 
 Solution
 ------------
