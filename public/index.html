@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Github Issues</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		body {
+	  background-color: #faf7f7;
+	}
+
+	.container {
+	  display: flex;
+	  height: 100vh;
+	  justify-content: center;
+	  align-items: center;
+	  overflow: hidden;
+	}
+
+	.circle-1 {
+	  background-color: #05668D;
+	  height: 20px;
+	  width: 20px;
+	  border-radius: 50%;
+	  margin: 2px;
+	  animation: rainbow-1 1.5s infinite;
+	  animation-delay: 100ms;
+	}
+	@keyframes rainbow-1 {
+	  0% {
+	    transform: translateY(0px);
+	  }
+	  50% {
+	    transform: translateY(-20px);
+	  }
+	  100% {
+	    transform: translateY(0deg);
+	  }
+	}
+	.circle-2 {
+	  background-color: #028090;
+	  height: 20px;
+	  width: 20px;
+	  border-radius: 50%;
+	  margin: 2px;
+	  animation: rainbow-2 1.5s infinite;
+	  animation-delay: 200ms;
+	}
+	@keyframes rainbow-2 {
+	  0% {
+	    transform: translateY(0px);
+	  }
+	  50% {
+	    transform: translateY(-30px);
+	  }
+	  100% {
+	    transform: translateY(0deg);
+	  }
+	}
+	.circle-3 {
+	  background-color: #00A896;
+	  height: 20px;
+	  width: 20px;
+	  border-radius: 50%;
+	  margin: 2px;
+	  animation: rainbow-3 1.5s infinite;
+	  animation-delay: 300ms;
+	}
+	@keyframes rainbow-3 {
+	  0% {
+	    transform: translateY(0px);
+	  }
+	  50% {
+	    transform: translateY(-40px);
+	  }
+	  100% {
+	    transform: translateY(0deg);
+	  }
+	}
+	.circle-4 {
+	  background-color: #02C39A;
+	  height: 20px;
+	  width: 20px;
+	  border-radius: 50%;
+	  margin: 2px;
+	  animation: rainbow-4 1.5s infinite;
+	  animation-delay: 400ms;
+	}
+	@keyframes rainbow-4 {
+	  0% {
+	    transform: translateY(0px);
+	  }
+	  50% {
+	    transform: translateY(-50px);
+	  }
+	  100% {
+	    transform: translateY(0deg);
+	  }
+	}
+	.circle-5 {
+	  background-color: #D8F28A;
+	  height: 20px;
+	  width: 20px;
+	  border-radius: 50%;
+	  margin: 2px;
+	  animation: rainbow-5 1.5s infinite;
+	  animation-delay: 500ms;
+	}
+	@keyframes rainbow-5 {
+	  0% {
+	    transform: translateY(0px);
+	  }
+	  50% {
+	    transform: translateY(-60px);
+	  }
+	  100% {
+	    transform: translateY(0deg);
+	  }
+	}
+	.circle-6 {
+	  background-color: #F0F3BD;
+	  height: 20px;
+	  width: 20px;
+	  border-radius: 50%;
+	  margin: 2px;
+	  animation: rainbow-6 1.5s infinite;
+	  animation-delay: 600ms;
+	}
+	@keyframes rainbow-6 {
+	  0% {
+	    transform: translateY(0px);
+	  }
+	  50% {
+	    transform: translateY(-70px);
+	  }
+	  100% {
+	    transform: translateY(0deg);
+	  }
+	}
+	</style>
+</head>
+<body>
+	<form id="url_form" style="display: inline-block;">
+		Url:
+		<input type="text" name="url" placeholder="Public Repo link" id="url" style="display: inline-block;">
+	</form>
+	<input type="submit" name="submit" id="submit" onclick="submit()" style="display: inline-block;">
+	<button style="display: inline-block;" onclick="history()">History</button>
+	<br>
+	<div class="container" id="loader" style="display: none;">
+  <div class="circle-1"></div>
+  <div class="circle-2"></div>
+  <div class="circle-3"></div>
+  <div class="circle-4"></div>
+  <div class="circle-5"></div>
+  <div class="circle-6"></div>
+</div>
+	<table id="table" style="display: none" class="container" border="2px">
+		<tr>
+			<th>Username</th>
+			<td id="username">shobhit1997</td>
+		</tr>
+		<tr>
+			<th>User Id</th>
+			<td id="userid">user id</td>
+		</tr>
+		<tr>
+			<th>Repo Link</th>
+			<td id="url1">url</td>
+		</tr>
+		<tr>
+			<th>Total Issues</th>
+			<td id="total_issues">total issues</td>
+		</tr>
+		<tr>
+			<th>Issue Within 24 hours</th>
+			<td id="issues_24">Issues opened within 24 hours</td>
+		</tr>
+		<tr>
+			<th>Issues 24 to 7 days</th>
+			<td id="issues_7">Issues opened after 24 hours with 7 days</td>
+		</tr>
+		<tr>
+			<th>Issues after 7 days</th>
+			<td id="issues_after_7">Issues opened after 7 days</td>
+		</tr>
+	</table>
+
+	<script src="js/index.js"></script>
+</body>
+</html>

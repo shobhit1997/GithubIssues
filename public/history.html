@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>History</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		body {
+	  background-color: #faf7f7;
+	}
+
+	.container {
+	  display: flex;
+	  height: 100vh;
+	  justify-content: center;
+	  align-items: center;
+	  overflow: hidden;
+	}
+
+	.circle-1 {
+	  background-color: #05668D;
+	  height: 20px;
+	  width: 20px;
+	  border-radius: 50%;
+	  margin: 2px;
+	  animation: rainbow-1 1.5s infinite;
+	  animation-delay: 100ms;
+	}
+	@keyframes rainbow-1 {
+	  0% {
+	    transform: translateY(0px);
+	  }
+	  50% {
+	    transform: translateY(-20px);
+	  }
+	  100% {
+	    transform: translateY(0deg);
+	  }
+	}
+	.circle-2 {
+	  background-color: #028090;
+	  height: 20px;
+	  width: 20px;
+	  border-radius: 50%;
+	  margin: 2px;
+	  animation: rainbow-2 1.5s infinite;
+	  animation-delay: 200ms;
+	}
+	@keyframes rainbow-2 {
+	  0% {
+	    transform: translateY(0px);
+	  }
+	  50% {
+	    transform: translateY(-30px);
+	  }
+	  100% {
+	    transform: translateY(0deg);
+	  }
+	}
+	.circle-3 {
+	  background-color: #00A896;
+	  height: 20px;
+	  width: 20px;
+	  border-radius: 50%;
+	  margin: 2px;
+	  animation: rainbow-3 1.5s infinite;
+	  animation-delay: 300ms;
+	}
+	@keyframes rainbow-3 {
+	  0% {
+	    transform: translateY(0px);
+	  }
+	  50% {
+	    transform: translateY(-40px);
+	  }
+	  100% {
+	    transform: translateY(0deg);
+	  }
+	}
+	.circle-4 {
+	  background-color: #02C39A;
+	  height: 20px;
+	  width: 20px;
+	  border-radius: 50%;
+	  margin: 2px;
+	  animation: rainbow-4 1.5s infinite;
+	  animation-delay: 400ms;
+	}
+	@keyframes rainbow-4 {
+	  0% {
+	    transform: translateY(0px);
+	  }
+	  50% {
+	    transform: translateY(-50px);
+	  }
+	  100% {
+	    transform: translateY(0deg);
+	  }
+	}
+	.circle-5 {
+	  background-color: #D8F28A;
+	  height: 20px;
+	  width: 20px;
+	  border-radius: 50%;
+	  margin: 2px;
+	  animation: rainbow-5 1.5s infinite;
+	  animation-delay: 500ms;
+	}
+	@keyframes rainbow-5 {
+	  0% {
+	    transform: translateY(0px);
+	  }
+	  50% {
+	    transform: translateY(-60px);
+	  }
+	  100% {
+	    transform: translateY(0deg);
+	  }
+	}
+	.circle-6 {
+	  background-color: #F0F3BD;
+	  height: 20px;
+	  width: 20px;
+	  border-radius: 50%;
+	  margin: 2px;
+	  animation: rainbow-6 1.5s infinite;
+	  animation-delay: 600ms;
+	}
+	@keyframes rainbow-6 {
+	  0% {
+	    transform: translateY(0px);
+	  }
+	  50% {
+	    transform: translateY(-70px);
+	  }
+	  100% {
+	    transform: translateY(0deg);
+	  }
+	}
+	</style>
+</head>
+<body>
+	<div class="container" id="loader" style="display: flex;">
+	  <div class="circle-1"></div>
+	  <div class="circle-2"></div>
+	  <div class="circle-3"></div>
+	  <div class="circle-4"></div>
+	  <div class="circle-5"></div>
+	  <div class="circle-6"></div>
+	</div>
+	<table  class="container" style="display: none;" id="table_body" border="2px">
+		<tr>
+			<th>UserName</th>
+			<th>UserId</th>
+			<th>Repo Link</th>
+			<th>Total Issues</th>
+			<th>Issues Within 24</th>
+			<th>Issues fron 24 hours to 7 days</th>
+			<th>Issues after 7 days</th>
+		</tr>
+	</table>
+<script src="js/history.js"></script>
+</body>
+</html>
