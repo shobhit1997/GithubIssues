@@ -3,7 +3,7 @@ const publicPath = path.join(__dirname,'../public');
 const express=require('express');
 const  app=express();
 const bodyParser=require('body-parser');
-const router=require('./routes/imageUploadRoutes');
+const router=require('./routes/repoRoutes');
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
 app.use(express.static(publicPath,{
